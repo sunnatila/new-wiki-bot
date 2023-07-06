@@ -34,7 +34,7 @@ async def send_help(msg: types.Message):
             answer += i
         await msg.answer(f"Siz qidirgan sozga malumot topilmadi.\nQuyidagi sozlardan birini qidirmadingizmi?\n{answer}")
     else:
-        await msg.reply("Siz qidirgan soga umuman malumot topilmadi")
+        await msg.reply("Siz qidirgan sozga umuman malumot topilmadi")
 
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
